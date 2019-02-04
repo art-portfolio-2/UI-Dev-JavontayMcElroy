@@ -180,6 +180,7 @@ body {
   border-radius: 3px;
   font-weight: 700;
   color: white;
+  cursor: pointer;
 }
 .cover .cover-content .sign-up:hover {
   font-weight: 700;
@@ -190,12 +191,14 @@ body {
   display: flex;
   margin: 5% 20% 5% 20%;
   justify-content: space-evenly;
+  width: 65%;
 }
 .more-info .info-text {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   color: #1a1a1a;
   padding-bottom: 20px;
+  padding-right: 20px;
   line-height: 25px;
 }
 .more-info .main-button {
@@ -208,6 +211,7 @@ body {
   border-radius: 3px;
   font-weight: 700;
   color: #1a1a1a;
+  cursor: pointer;
 }
 .more-info .main-button:hover {
   background-color: #1a1a1a;
@@ -223,21 +227,58 @@ body {
 }
 .grid-images {
   margin: 0 auto;
-  width: 500px;
+  width: 65%;
 }
 .grid-images img {
   width: 100%;
 }
 .overview {
   display: flex;
-  justify-content: space-evenly;
-  width: 100%;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 65%;
+  margin: 0 auto;
   margin-top: 5%;
+  margin-bottom: 5%;
 }
 .overview .overview-grid {
+  width: 65%;
   font-family: 'Roboto', sans-serif;
+  padding: 0px 30px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  flex-basis: 0;
 }
 .overview .overview-grid h3 {
   padding-bottom: 10px;
-  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.overview .overview-grid p {
+  line-height: 20px;
+  color: grey;
+  font-size: 0.8rem;
+}
+.team {
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  width: 65%;
+  margin-bottom: 10%;
+}
+.team h2 {
+  width: 50%;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 20px;
+  padding-bottom: 20px;
+}
+.team .team-images {
+  display: flex;
+}
+.team .team-images img {
+  width: 25%;
+  height: 25%;
 }
