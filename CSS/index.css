@@ -130,6 +130,9 @@ body {
   width: 100%;
   height: auto;
   margin: 0 auto;
+  background-image: url(https://i.ibb.co/8xYwFPB/coverimage.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 @media (max-width: 500px) {
   body {
@@ -138,9 +141,9 @@ body {
 }
 .navigation {
   display: flex;
+  align-content: flex-start;
   margin: 30px 20px 30px 20px;
   width: 26%;
-  position: absolute;
 }
 @media (max-width: 500px) {
   .navigation {
@@ -151,8 +154,11 @@ body {
     margin: 0 auto;
   }
 }
+.navigation .title {
+  font-size: 1.5rem;
+}
 .navigation a {
-  padding-left: 25px;
+  padding-left: 40px;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   color: white;
@@ -171,10 +177,6 @@ body {
   width: 100%;
   padding-bottom: 295px;
   margin: 0 auto;
-  background-image: url(https://i.ibb.co/4KXR1MR/coverimage.png);
-  background-position: center bottom ;
-  background-repeat: no-repeat;
-  background-size: 100%;
 }
 @media (max-width: 500px) {
   .cover {
@@ -184,16 +186,22 @@ body {
 .cover .cover-content {
   display: flex;
   flex-direction: column;
+  margin: 12% 20% 2% 20%;
+  padding: 20px 50px 20px 50px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.137);
 }
 .cover .cover-content .cover-text {
-  padding: 20% 20% 2% 20%;
   font-size: 1.5rem;
-  color: white;
+  text-transform: uppercase;
+  color: #181818;
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 30px;
   text-align: center;
+  padding-bottom: 5%;
 }
 @media (max-width: 500px) {
   .cover .cover-content .cover-text {
@@ -202,26 +210,33 @@ body {
     padding: 0% 0% 0% 0%;
   }
 }
+.cover .cover-content .cover-body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+  padding-bottom: 5%;
+  line-height: 20px;
+}
 .cover .cover-content .sign-up {
   margin: 0 auto;
-  width: 20%;
-  padding: 10px 100px 10px 100px;
+  width: 30%;
+  padding: 10px 50px 10px 50px;
   background-color: rgba(0, 0, 0, 0);
-  border: 2px solid white;
+  border: 1.2px solid black;
   border-radius: 3px;
   font-weight: 700;
-  color: white;
+  color: black;
   cursor: pointer;
 }
 .cover .cover-content .sign-up:hover {
   font-weight: 700;
-  background-color: white;
-  color: #222222;
+  background-color: #0a0a0a;
+  color: white;
 }
 .more-info {
   display: flex;
   margin: 0 auto;
-  padding: 5% 0% 5% 0%;
+  padding: 10% 0% 5% 0%;
   justify-content: space-between;
   width: 65%;
 }
@@ -370,4 +385,29 @@ body {
     width: 100%;
     height: 100%;
   }
+}
+.footer {
+  border: 1px solid #0c0c0c;
+  background-color: #0c0c0c;
+  display: flex;
+  justify-content: space-around;
+}
+.footer .contact {
+  margin: 6% 0% 6% 6%;
+}
+.footer .contact h3 {
+  color: white;
+  padding-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+.footer .navigation-footer {
+  display: flex;
+  flex-direction: column;
+  margin: 6% 0% 6% 6%;
+}
+.footer .navigation-footer a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 20px;
 }
