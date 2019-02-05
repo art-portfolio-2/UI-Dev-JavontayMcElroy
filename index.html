@@ -3,7 +3,10 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="menu.js"></script>
 
+  
   <title>ARTFOLIO</title>
   <link href="css/index.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
@@ -14,18 +17,21 @@
 <!-- END OF HEADER -->
 <body>
     <nav class="navigation">
-        <a class="title" href="index.html">ARTFOLIO</a>
-        <a href="#">home</a>
-        <a href="#">twitter</a>
-        <a href="#">instagram</a>
-        <a href="#">facebook</a>
+        <div>
+            <a class="title" href="index.html">ARTFOLIO</a>
+            <a href="#">home</a>
+            <a href="#">twitter</a>
+            <a href="#">instagram</a>
+            <a href="#">facebook</a>
+        </div>
+        <div class="login"><a href="#">login</a></div>
     </nav>
 <!-- END OF NAV -->
     <section class="cover">
         <div class="cover-content">
             <h3 class="cover-text">Welcome to ARTFOLIO</h3>
              <h3 class="cover-body">
-                A place where you can share your amazing art! Whether you're a photographer, painter, digital artist or illustrator. ArtFolio can display your content in a professional and clean way! So what are you waiting for? Sign up today:
+                A place where you can share your amazing art! Whether you're a photographer, painter, digital artist or illustrator. ARTFOLIO can display your content in a professional and clean way! So what are you waiting for? Sign up today:
              </h3>
             <button class="sign-up">Sign up</button>
         </div>
@@ -35,7 +41,7 @@
             <h3 class="info-text">The one stop place to create beautiful and stunning portfolios that look great on resumes, proposals, or just to have a place to show off your creativity.</h3>
             <button class="main-button">sign up today</button>
         </div>
-        <p>ARTFOLIO is a tool that allows you to create stunning and professional portfolios with ease, there is no other tool like it. With ArtFolio, our users can simply upload their work and their work will automatically be placed in a grid format that automatically adjusts to the size of their content. Our team has developed a light-weight tool that can detect the sizes of your photos uploaded, and beautifully display them so that you don't have to worry about it. It's like magic!</p>
+        <p>ARTFOLIO is a tool that allows you to create stunning and professional portfolios with ease, there is no other tool like it. With ARTFOLIO, our users can simply upload their work and their work will automatically be placed in a grid format that automatically adjusts to the size of their content. Our team has developed a light-weight tool that can detect the sizes of your photos uploaded, and beautifully display them so that you don't have to worry about it. It's like magic!</p>
     </section>
     <section class="grid-images">
         <img src="design file/Images/grid/food.jpg">
@@ -45,18 +51,22 @@
     </section>
     <section class="overview">
         <div class="overview-grid">
+            <img class="steps" src="design file/Images/steps/1.png">
             <h3>step 1: upload your amazing art</h3>
             <p>simply select your file or files from your computer and upload them. our system will handle the resizes and will make sure that your work will retain it's quality and awesomeness!</p>
         </div>
         <div class="overview-grid">
+            <img class="steps" src="design file/Images/steps/2.png">
             <h3>step 2: name your masterpiece</h3>
             <p>it's super important to give your name a title, how else will people know what to call your awesome piece of work!</p>
         </div>
         <div class="overview-grid">
+            <img class="steps" src="design file/Images/steps/3.png">
             <h3>step 3: give your masterpiece a description</h3>
             <p>what's an iconic piece without meaning and story? when people are viewing your work, they love knowing the reasoning behind it, so why not give it some meaning! what inspired the piece? what was the creative process behind it? what materials were used?</p>
         </div>
         <div class="overview-grid">
+            <img class="steps" src="design file/Images/steps/4.png">
             <h3>step 4: upload</h3>
             <p>that's it! we'll take care of the rest! once you press upload, our system will automatically add your masterpiece or pieces, into a beautiful and organized grid! it's like magic!</p>
         </div>
@@ -91,3 +101,4 @@
         </div>
     </section>
 </body>
+</html>

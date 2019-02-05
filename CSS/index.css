@@ -130,7 +130,7 @@ body {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  background-image: url(https://i.ibb.co/8xYwFPB/coverimage.png);
+  background-image: url(https://i.ibb.co/HgDQ6KJ/background.png);
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -139,25 +139,40 @@ body {
     width: 99%;
   }
 }
+.container {
+  background-color: white;
+}
 .navigation {
   display: flex;
-  align-content: flex-start;
-  margin: 30px 20px 30px 20px;
-  width: 26%;
+  justify-content: space-between;
+  margin: 30px 0px 30px 20px;
+  width: 95%;
 }
 @media (max-width: 500px) {
   .navigation {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
+    display: none;
   }
 }
-.navigation .title {
+.login {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px 40px 5px 5px;
+}
+.login a {
+  color: white;
+}
+.login:hover {
+  background-color: white;
+  transition: 0.5s;
+}
+.login:hover a {
+  color: black;
+}
+.title {
   font-size: 1.5rem;
 }
-.navigation a {
+a {
   padding-left: 40px;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
@@ -166,11 +181,9 @@ body {
   cursor: pointer;
 }
 @media (max-width: 500px) {
-  .navigation a {
-    color: black;
+  a {
     text-align: center;
     padding: 10px 0px 10px 0px;
-    border-bottom: 1px solid black;
   }
 }
 .cover {
@@ -180,7 +193,7 @@ body {
 }
 @media (max-width: 500px) {
   .cover {
-    display: none;
+    padding-bottom: 0px;
   }
 }
 .cover .cover-content {
@@ -191,6 +204,12 @@ body {
   background-color: white;
   border-radius: 8px;
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.137);
+}
+@media (max-width: 500px) {
+  .cover .cover-content {
+    width: 50%;
+    margin: 15% auto;
+  }
 }
 .cover .cover-content .cover-text {
   font-size: 1.5rem;
@@ -228,15 +247,21 @@ body {
   color: black;
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  .cover .cover-content .sign-up {
+    width: 100%;
+  }
+}
 .cover .cover-content .sign-up:hover {
-  font-weight: 700;
-  background-color: #0a0a0a;
+  background-color: #1a1a1a;
+  border: 1.2px solid #1a1a1a;
   color: white;
+  transition: 0.5s;
 }
 .more-info {
   display: flex;
   margin: 0 auto;
-  margin: 16% auto 6% auto;
+  margin: 15% auto 6% auto;
   justify-content: space-between;
   width: 65%;
 }
@@ -245,6 +270,8 @@ body {
     width: 90%;
     display: flex;
     flex-direction: column;
+    border-top: 2px solid #e7e7e7;
+    padding-top: 40px;
   }
 }
 .more-info .info-text {
@@ -274,13 +301,14 @@ body {
 }
 @media (max-width: 500px) {
   .more-info .main-button {
-    margin-left: 16%;
-    margin-bottom: 5%;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 .more-info .main-button:hover {
   background-color: #1a1a1a;
   color: white;
+  transition: 0.5s;
 }
 .more-info p {
   width: 90%;
@@ -293,20 +321,36 @@ body {
 @media (max-width: 500px) {
   .more-info p {
     width: 100%;
+    margin-top: 8%;
   }
 }
 .grid-images {
   margin: 0 auto;
-  width: 65%;
+  width: 100%;
   display: grid;
   grid-template-columns: 0fr 0fr;
+  grid-gap: 10px;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .grid-images {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 .grid-images img {
   object-fit: cover;
   width: 500px;
   height: 800px;
-  filter: grayscale(100%);
+}
+@media (max-width: 500px) {
+  .grid-images img {
+    margin: 0 auto;
+    width: 350px;
+    height: 500px;
+  }
 }
 .overview {
   display: flex;
@@ -322,6 +366,9 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+    border-top: 2px solid #e7e7e7;
+    margin-top: 15%;
+    padding-top: 50px;
   }
 }
 .overview .overview-grid {
@@ -335,8 +382,11 @@ body {
 @media (max-width: 500px) {
   .overview .overview-grid {
     width: 90%;
-    margin: 0 auto;
-    padding: 0px 0px 0px 0px;
+    margin: auto auto 20% auto;
+    padding: 20px 10px 20px 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.13);
   }
 }
 .overview .overview-grid h3 {
@@ -344,16 +394,24 @@ body {
   font-size: 1rem;
   font-weight: 700;
   padding-bottom: 20px;
+  text-align: center;
 }
 .overview .overview-grid p {
   line-height: 20px;
   color: grey;
   font-size: 0.8rem;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .overview .overview-grid p {
     padding-bottom: 10%;
   }
+}
+.overview .overview-grid .steps {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 .team {
   font-family: 'Roboto', sans-serif;
@@ -377,6 +435,7 @@ body {
   display: grid;
   grid-template-columns: 0fr 0fr 0fr 0fr;
   margin: 0 auto;
+  width: 100%;
 }
 @media (max-width: 500px) {
   .team .team-images {
@@ -419,4 +478,7 @@ body {
   color: white;
   font-family: 'Roboto', sans-serif;
   padding-bottom: 20px;
+}
+.footer .navigation-footer .title {
+  font-size: 1.5rem;
 }
