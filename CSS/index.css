@@ -298,9 +298,15 @@ body {
 .grid-images {
   margin: 0 auto;
   width: 65%;
+  display: grid;
+  grid-template-columns: 0fr 0fr;
+  justify-content: center;
 }
 .grid-images img {
-  width: 100%;
+  object-fit: cover;
+  width: 500px;
+  height: 800px;
+  filter: grayscale(100%);
 }
 .overview {
   display: flex;
@@ -368,7 +374,9 @@ body {
   }
 }
 .team .team-images {
-  display: flex;
+  display: grid;
+  grid-template-columns: 0fr 0fr 0fr 0fr;
+  margin: 0 auto;
 }
 @media (max-width: 500px) {
   .team .team-images {
@@ -377,8 +385,9 @@ body {
   }
 }
 .team .team-images img {
-  width: 25%;
-  height: 25%;
+  object-fit: cover;
+  width: 245px;
+  height: 245px;
 }
 @media (max-width: 500px) {
   .team .team-images img {
