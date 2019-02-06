@@ -683,15 +683,48 @@ body {
 }
 
 .footer {
-    background-color: #e9e9e9;
+    background-color: rgb(33, 47, 248);
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-around;
 
     @media (max-width: 500px) {
         padding-top: 50px;
         padding-bottom: 50px;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    .about-us{
+        margin: 5% 0% 5% 5%;
+        width: 20%;
+
+        @media(max-width: 500px){
+            margin: 10% 0% 2% 5%;
+            width: 90%;
+        }
+
+        h1 {
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+            padding-bottom: 20px;
+
+            @media(max-width: 500px){
+                text-align: center;
+            }
+        }
+        p {
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            line-height: 25px;
+
+            @media(max-width: 500px){
+                text-align: justify;
+            }
+
+        }
     }
 
     .contact {
@@ -699,7 +732,7 @@ body {
     }
 
     .contact h3 {
-        color: rgb(53, 53, 53);
+        color: white;
         padding-bottom: 8%;
         font-family: 'Roboto', sans-serif;
         font-weight: 500;
@@ -707,7 +740,7 @@ body {
 
         @media (max-width: 500px) {
             padding-bottom: 5%;
-            color: rgb(77, 77, 77);
+            color: white;
             font-size: .8rem;
         }
     }
@@ -726,22 +759,18 @@ body {
         }
 
         h1 {
-            color: rgb(67, 79, 241);
+            color: white;
             font-family: 'Roboto', sans-serif;
             font-size: 1.5rem;
             font-weight: 500;
 
             @media (max-width: 500px) {
-                color: rgb(134, 134, 134);
+                color: white;
                 font-size: 1rem;
                 text-align: center;
             }
         }
 
-        h1:hover{
-            color: rgb(105, 115, 247);
-            transition: .5s;
-        }
 
         .contact-form {
             max-width: 600px;
@@ -763,7 +792,11 @@ body {
             padding-bottom: 10px;
             outline: none;
             font-family: 'Roboto', sans-serif;
-            color: rgb(53, 53, 53);
+            color: white;
+        }
+
+        ::placeholder{
+            color: white;
         }
 
         textarea.contact-form-text {
@@ -789,6 +822,7 @@ body {
             border: 0px solid black;
             transition: .5s;
         }
+
 
     }
 
