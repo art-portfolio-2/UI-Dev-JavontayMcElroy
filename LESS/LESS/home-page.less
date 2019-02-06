@@ -1,9 +1,9 @@
 html {
     background-color: #f8f8f8;
+
 }
 body {
     width: 100%;
-    height: auto;
     margin: 0 auto;
     background-image: url(https://i.ibb.co/HgDQ6KJ/background.png);
     background-repeat: no-repeat;
@@ -14,27 +14,29 @@ body {
     }
 }
 
-.container {
-    background-color: white;
-}
-
 .navigation {
     display: flex;
     justify-content: space-between;
     align-content: flex-end;
     padding-top: 20px;
-    margin: 0px 0px 30px 0px;
-    width: 95%;
+    padding-bottom: 20px;
+    width: 100%;
     margin: 0 auto;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.137);
+
 
     @media (max-width: 800px){
-        display: flex;
-        flex-direction: column;
+        justify-content: flex-start;
     }
 
     @media (max-width: 500px) {
         display: flex;
         flex-direction: column;
+        padding-bottom: 10px;
+        padding-top: 10px;
     }
     .logo-header {
         width: 40px;
@@ -42,10 +44,15 @@ body {
         padding-left: 50px;
 
         @media (max-width: 500px) {
-            display: none;
+            width: 40px;
+            margin-right: 50%;
+            margin-left: 40%;
         }
+
         @media (max-width: 800px) {
-            padding-right: 5px;
+            width: 40px;
+            padding-left: 30px;
+            padding-right: 50px;
         }
     
     }
@@ -53,16 +60,16 @@ body {
     }
     .login{
         background-color: rgb(67, 79, 241);
+        margin-right: 50px;
         border-radius: 5px;
         padding: 5px 15px 5px 50px;
         text-align: center;
         cursor: pointer;
 
         @media (max-width: 800px){
-            margin-top: 20px;
-            padding: 5px 25px 5px 50px;
-            width: 15%;
-            margin: 20px auto;
+            padding: 3px 30px 3px 50px;
+            width: 8%;
+            margin: 0 auto;
         }
 
         @media (max-width: 500px){
@@ -75,7 +82,7 @@ body {
     }
 
     .login:hover{
-        background-color: rgb(33, 47, 248);
+        background-color: #202ef8;
         transition: .5s;
         a {
             color: white;
@@ -83,47 +90,64 @@ body {
     }
     .title {
         font-size: 1.5rem;
+        font-weight: 700;
+        color: rgb(33, 47, 248);
+
+        @media (max-width: 800px){
+            display: none;
+        }
+
     }
 
     a {
         text-decoration: none;
         font-family: 'Roboto', sans-serif;
-        color: white;
+        font-size: .8rem;
+        color: rgb(37, 37, 37);
         font-weight: 500;
         cursor: pointer;
-        padding-right: 40px;
+        margin-right: 40px;
         
         @media (max-width: 800px){
-            padding-right: 20px;
+            padding-right: 30px;
+            margin-right: 5px;
         }
         
         @media (max-width: 500px) {
-            text-align: center;
+            display: none;
+            /* text-align: center;
             padding: 8px 0px 10px 0px;
             display: flex;
-            flex-direction: column;
+            flex-direction: column; */
      }
+    }
+    a:hover {
+        transition: .2s;
+        color: #202ef8;
     }
 
 
 
 .cover {
     width: 100%;
+    padding-top: 15%;
     padding-bottom: 295px;
-    margin: 12% auto;
+    margin: 0 auto;
 
     @media (max-width: 800px) {
-        padding-bottom: 0px;
+        padding-top: 30%;
+        padding-bottom: 30px;
     }
 
     @media (max-width: 500px){
+        padding-top: 10%;
         padding-bottom: 0px;
     }
 
     .cover-content{
         display: flex;
         flex-direction: column;
-        margin: 5% 20% 2% 20%;
+        margin: 0% 20% 2% 20%;
         padding: 20px 50px 20px 50px;
         background-color: white;
         border-radius: 8px;
@@ -179,6 +203,10 @@ body {
             color: white;
             cursor: pointer;  
 
+            @media (max-width: 1440px){
+                width: 40%;
+            }
+
             @media (max-width: 800px){
                 width: 100%;
             }
@@ -200,9 +228,13 @@ body {
 .more-info {
     display: flex;
     margin: 0 auto;
-    margin: 10% auto 6% auto;
+    margin: 12% auto 6% auto;
     justify-content: space-between;
     width: 65%;
+
+    @media (max-width: 1440px){
+        margin: 0% auto 6% auto;
+    }
 
     @media (max-width: 800px) {
         width: 80%;
@@ -242,10 +274,10 @@ body {
         padding: 10px 0px 10px 0px;
         text-align: center;
         background-color: rgba(0, 0, 0, 0);
-        border: 2px solid rgb(26, 26, 26);
+        border: 2px solid rgb(33, 47, 248);
         border-radius: 3px;
         font-weight: 700;
-        color: rgb(26, 26, 26);
+        color: rgb(33, 47, 248);
         cursor: pointer;
 
         @media (max-width: 800px) {
@@ -261,7 +293,8 @@ body {
     }
 
     .main-button:hover {
-        background-color: rgb(26, 26, 26);
+        background-color: rgb(33, 47, 248);
+        border: 2px solid rgb(33, 47, 248);
         color: white;
         transition: .5s;
 
@@ -422,6 +455,12 @@ body {
     border-bottom: 2px solid rgb(236, 236, 236);
     border-top: 2px solid rgb(236, 236, 236);
 
+    @media (max-width: 1440px){
+        width: 74%;
+        margin: 0 auto;
+    }
+    
+
     @media (max-width: 800px){
         width: 93%;
     }
@@ -447,6 +486,11 @@ body {
         margin: 0 auto;
         width: 100%;
 
+        @media (max-width: 1440px){
+            width: 100%;
+            margin: 0 auto;
+        }
+
         @media (max-width: 800px){
             display: grid;
             grid-template-columns: 0fr 0fr 0fr 0fr;
@@ -467,6 +511,12 @@ body {
             object-fit: cover;
             width: 245px;
             height: 245px;
+
+            @media (max-width: 1440px){
+                object-fit: cover;
+                width: 200px;
+                height: 200px;
+            }
 
             @media (max-width: 800px){
                 object-fit: cover;
@@ -491,13 +541,21 @@ body {
     padding-bottom: 50px;
     padding-top: 50px;
 
+    @media (max-width: 500px){
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
     .testimony-header {
         font-size: 1.5rem;
         font-family: 'Roboto', sans-serif;
+        line-height: 30px;
         text-align: center;
         padding-bottom: 50px;
         font-weight: 750;
         color: rgb(48, 48, 48);
+        margin: 0 auto;
     }
 
     .stars {
@@ -521,7 +579,7 @@ body {
 
     .filter {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         width: 300px;
         margin: 0 auto;
 
@@ -562,7 +620,6 @@ body {
         @media (max-width: 500px){
             display: flex;
             flex-direction: column;
-            justify-content: center;
         }
     }
 
@@ -575,13 +632,13 @@ body {
         border-radius: 5px;
 
         @media (max-width: 800px) {
-            width: 100%;
+            width: 90%;
             margin: 0 auto;
             margin-bottom: 20px;
         }
 
         @media (max-width: 500px) {
-            width: 100%;
+            width: 80%;
             margin: 0 auto;
             margin-bottom: 20px;
         }
@@ -610,6 +667,8 @@ body {
     justify-content: space-around;
 
     @media (max-width: 500px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
         display: flex;
         flex-direction: column;
     }
@@ -642,6 +701,7 @@ body {
 
         @media (max-width: 500px) {
             max-width: 320px;
+            margin: 0 auto;
         }
 
         h1 {

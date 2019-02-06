@@ -131,7 +131,6 @@ html {
 }
 body {
   width: 100%;
-  height: auto;
   margin: 0 auto;
   background-image: url(https://i.ibb.co/HgDQ6KJ/background.png);
   background-repeat: no-repeat;
@@ -142,28 +141,30 @@ body {
     width: 99%;
   }
 }
-.container {
-  background-color: white;
-}
 .navigation {
   display: flex;
   justify-content: space-between;
   align-content: flex-end;
   padding-top: 20px;
-  margin: 0px 0px 30px 0px;
-  width: 95%;
+  padding-bottom: 20px;
+  width: 100%;
   margin: 0 auto;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.137);
 }
 @media (max-width: 800px) {
   .navigation {
-    display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
   }
 }
 @media (max-width: 500px) {
   .navigation {
     display: flex;
     flex-direction: column;
+    padding-bottom: 10px;
+    padding-top: 10px;
   }
 }
 .navigation .logo-header {
@@ -173,16 +174,21 @@ body {
 }
 @media (max-width: 500px) {
   .navigation .logo-header {
-    display: none;
+    width: 40px;
+    margin-right: 50%;
+    margin-left: 40%;
   }
 }
 @media (max-width: 800px) {
   .navigation .logo-header {
-    padding-right: 5px;
+    width: 40px;
+    padding-left: 30px;
+    padding-right: 50px;
   }
 }
 .login {
   background-color: #434ff1;
+  margin-right: 50px;
   border-radius: 5px;
   padding: 5px 15px 5px 50px;
   text-align: center;
@@ -190,10 +196,9 @@ body {
 }
 @media (max-width: 800px) {
   .login {
-    margin-top: 20px;
-    padding: 5px 25px 5px 50px;
-    width: 15%;
-    margin: 20px auto;
+    padding: 3px 30px 3px 50px;
+    width: 8%;
+    margin: 0 auto;
   }
 }
 @media (max-width: 500px) {
@@ -205,7 +210,7 @@ body {
   color: white;
 }
 .login:hover {
-  background-color: #212ff8;
+  background-color: #202ef8;
   transition: 0.5s;
 }
 .login:hover a {
@@ -213,47 +218,64 @@ body {
 }
 .title {
   font-size: 1.5rem;
+  font-weight: 700;
+  color: #212ff8;
+}
+@media (max-width: 800px) {
+  .title {
+    display: none;
+  }
 }
 a {
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
-  color: white;
+  font-size: 0.8rem;
+  color: #252525;
   font-weight: 500;
   cursor: pointer;
-  padding-right: 40px;
+  margin-right: 40px;
 }
 @media (max-width: 800px) {
   a {
-    padding-right: 20px;
+    padding-right: 30px;
+    margin-right: 5px;
   }
 }
 @media (max-width: 500px) {
   a {
-    text-align: center;
-    padding: 8px 0px 10px 0px;
-    display: flex;
-    flex-direction: column;
+    display: none;
+    /* text-align: center;
+            padding: 8px 0px 10px 0px;
+            display: flex;
+            flex-direction: column; */
   }
+}
+a:hover {
+  transition: 0.2s;
+  color: #202ef8;
 }
 .cover {
   width: 100%;
+  padding-top: 15%;
   padding-bottom: 295px;
-  margin: 12% auto;
+  margin: 0 auto;
 }
 @media (max-width: 800px) {
   .cover {
-    padding-bottom: 0px;
+    padding-top: 30%;
+    padding-bottom: 30px;
   }
 }
 @media (max-width: 500px) {
   .cover {
+    padding-top: 10%;
     padding-bottom: 0px;
   }
 }
 .cover .cover-content {
   display: flex;
   flex-direction: column;
-  margin: 5% 20% 2% 20%;
+  margin: 0% 20% 2% 20%;
   padding: 20px 50px 20px 50px;
   background-color: white;
   border-radius: 8px;
@@ -306,6 +328,11 @@ a {
   color: white;
   cursor: pointer;
 }
+@media (max-width: 1440px) {
+  .cover .cover-content .sign-up {
+    width: 40%;
+  }
+}
 @media (max-width: 800px) {
   .cover .cover-content .sign-up {
     width: 100%;
@@ -325,9 +352,14 @@ a {
 .more-info {
   display: flex;
   margin: 0 auto;
-  margin: 10% auto 6% auto;
+  margin: 12% auto 6% auto;
   justify-content: space-between;
   width: 65%;
+}
+@media (max-width: 1440px) {
+  .more-info {
+    margin: 0% auto 6% auto;
+  }
 }
 @media (max-width: 800px) {
   .more-info {
@@ -370,10 +402,10 @@ a {
   padding: 10px 0px 10px 0px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0);
-  border: 2px solid #1a1a1a;
+  border: 2px solid #212ff8;
   border-radius: 3px;
   font-weight: 700;
-  color: #1a1a1a;
+  color: #212ff8;
   cursor: pointer;
 }
 @media (max-width: 800px) {
@@ -389,7 +421,8 @@ a {
   }
 }
 .more-info .main-button:hover {
-  background-color: #1a1a1a;
+  background-color: #212ff8;
+  border: 2px solid #212ff8;
   color: white;
   transition: 0.5s;
 }
@@ -545,6 +578,12 @@ a {
   border-bottom: 2px solid #ececec;
   border-top: 2px solid #ececec;
 }
+@media (max-width: 1440px) {
+  .team {
+    width: 74%;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 800px) {
   .team {
     width: 93%;
@@ -571,6 +610,12 @@ a {
   margin: 0 auto;
   width: 100%;
 }
+@media (max-width: 1440px) {
+  .team .team-images {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 800px) {
   .team .team-images {
     display: grid;
@@ -594,6 +639,13 @@ a {
   width: 245px;
   height: 245px;
 }
+@media (max-width: 1440px) {
+  .team .team-images img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+  }
+}
 @media (max-width: 800px) {
   .team .team-images img {
     object-fit: cover;
@@ -614,13 +666,21 @@ a {
   padding-bottom: 50px;
   padding-top: 50px;
 }
+@media (max-width: 500px) {
+  .testimonies {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 .testimonies .testimony-header {
   font-size: 1.5rem;
   font-family: 'Roboto', sans-serif;
+  line-height: 30px;
   text-align: center;
   padding-bottom: 50px;
   font-weight: 750;
   color: #303030;
+  margin: 0 auto;
 }
 .testimonies .stars {
   width: 100px;
@@ -640,7 +700,7 @@ a {
 }
 .testimonies .filter {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 300px;
   margin: 0 auto;
 }
@@ -680,7 +740,6 @@ a {
   .testimonies .testimony-grid {
     display: flex;
     flex-direction: column;
-    justify-content: center;
   }
 }
 .testimonies .user-reviews {
@@ -693,14 +752,14 @@ a {
 }
 @media (max-width: 800px) {
   .testimonies .user-reviews {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     margin-bottom: 20px;
   }
 }
 @media (max-width: 500px) {
   .testimonies .user-reviews {
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     margin-bottom: 20px;
   }
@@ -725,6 +784,8 @@ a {
 }
 @media (max-width: 500px) {
   .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
   }
@@ -757,6 +818,7 @@ a {
 @media (max-width: 500px) {
   .footer .contact-footer {
     max-width: 320px;
+    margin: 0 auto;
   }
 }
 .footer .contact-footer h1 {
