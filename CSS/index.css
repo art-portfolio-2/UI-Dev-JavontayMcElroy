@@ -242,7 +242,7 @@ a {
 }
 @media (max-width: 800px) {
   .cover {
-    padding-bottom: 50px;
+    padding-bottom: 0px;
   }
 }
 @media (max-width: 500px) {
@@ -305,6 +305,11 @@ a {
   font-weight: 700;
   color: white;
   cursor: pointer;
+}
+@media (max-width: 800px) {
+  .cover .cover-content .sign-up {
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .cover .cover-content .sign-up {
@@ -744,6 +749,11 @@ a {
   margin: 5% 0% 5% 5%;
   width: 600px;
 }
+@media (max-width: 800px) {
+  .footer .contact-footer {
+    max-width: 400px;
+  }
+}
 @media (max-width: 500px) {
   .footer .contact-footer {
     max-width: 320px;
@@ -808,19 +818,4 @@ a {
   background-color: #6cf143;
   border: 0px solid black;
   transition: 0.5s;
-}
-.footer .mapouter {
-  padding-top: 5%;
-  text-alight: right;
-  height: 300px;
-  width: 400px;
-  border-radius: 8px;
-}
-.footer .gmap_canvas {
-  border-radius: 5px;
-  overflow: hidden;
-  background: none !important;
-  height: 300px;
-  width: 400px;
-  filter: contrast(1);
 }

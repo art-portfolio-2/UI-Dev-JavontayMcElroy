@@ -113,7 +113,7 @@ body {
     margin: 12% auto;
 
     @media (max-width: 800px) {
-        padding-bottom: 50px;
+        padding-bottom: 0px;
     }
 
     @media (max-width: 500px){
@@ -179,6 +179,9 @@ body {
             color: white;
             cursor: pointer;  
 
+            @media (max-width: 800px){
+                width: 100%;
+            }
             @media (max-width: 500px){
                 width: 100%;
             }
@@ -633,6 +636,10 @@ body {
         margin: 5% 0% 5% 5%;
         width: 600px;
        
+        @media (max-width: 800px){
+            max-width: 400px;
+        }
+
         @media (max-width: 500px) {
             max-width: 320px;
         }
@@ -703,24 +710,6 @@ body {
         }
 
     }
-
-    .mapouter {
-        padding-top: 5%;
-        text-alight: right;
-        height: 300px;
-        width: 400px;
-        border-radius: 8px;
-    }
-
-    .gmap_canvas {
-        border-radius: 5px;
-        overflow: hidden;
-        background: none !important;
-        height: 300px;
-        width: 400px;
-        filter: contrast(1);
-    }
-
 
 }
 
