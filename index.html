@@ -3,8 +3,10 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
-
-  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="./components/Tabs/Tabs.js" async></script>
+  <!-- End of HTML stuff -->
   <title>ARTFOLIO</title>
   <link href="css/index.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
@@ -89,34 +91,34 @@
             <img src="design file/Images/stars.png">
             <p>4.5 / 5 stars</p>
         </div>
-        <div class="filter">
-            <h3>1</h3>
-            <h3>2</h3>
-            <h3>3</h3>
+        <div class="tabs">
+            <h3 data-tab="all" class="tab active-tab">All</h3>
+            <h3 data-tab="best" class="tab">Best</h3>
+            <h3 data-tab="worst" class="tab">Worst</h3>
         </div>
         <div class="testimony-grid">
-            <div class="user-reviews">
+            <div class="card" data-tab="best">
                 <h3 class="review-body">"I never asked for any of this...never asked for a tool that could automatically create a portfolio that I could show Peeta and the kids. I didn't know I needed this until I used it! Now, Peeta gets annoyed because everytime we take a photo, I'm always like, "LET'S ADD IT TO THE PORTFOLIO!"</h3>
                 <p>Katniss Everdeen</p>
             </div>
-            <div class="user-reviews">
+            <div class="card" data-tab="best">
                 <h3 class="review-body">"I love this app! R2-D2 is kind of mad about it and keeps saying he could already take our space adventure photos and put them into an organized portfolio. But to be honest, he's always had something wrong with them, like I was never in them... With ArtFolio, I CAN PUT MYSELF IN THE WHOLE PORFOLIO!"</h3>
                 <p>Luke Skywalker</p>
             </div>
-            <div class="user-reviews">
+            <div class="card" data-tab="worst">
                 <h3 class="review-body">"The algorithm needs work...a lot of work... To be honest, I think the team should just let me work on this so I can improve it. Could probably get it done in about an hour.. Could even add an A.I. to it! J.A.R.V.I.S 2.0 maybe? I've been wanting to bring back J.A.R.V.I.S. after the whole Ultron, Vision situation. Poor Vision... Was killed by the person he loved, only to be brought back at have his stone ripped right from his head... Where was Shuri when we were creating Vision..."</h3>
                 <p>Bruce Banner</p>
             </div>
-            <div class="user-reviews">
+            <div class="card" data-tab="best">
                 <h3 class="review-body">"Hey y'all it's B. I really love this app because I'm able to make beautiful collages of me, Blue, the twins, and Jay. I take a lot more pictures now! I just love how it automatically arranges the pictures for me, and it looks so nice! It's fast too, the Beyhive always complained that I never update my site on a regular, but it took too long.. ArtFolio took it to another level NO PASSENGERS ON MY PLANE!"</h3>
                 <p>Beyoncé Knowles-Carter</p>
             </div>
-            <div class="user-reviews">
+            <div class="card" data-tab="best">
                 <h3 class="review-body">"ArtFolio is the most MAGICAL thing that has ever hit Bikini Bottom! I didn't know anything about the Internet until Plankton and Sandy teamed up and created underwater computers! Now, I can share pictures of me and Gary with Squidward...I like Squidward."</h3>
                 <p>Spongebob Squarepants</p>
             </div>
-            <div class="user-reviews">
-                <h3 class="review-body">"ArtFolio is a tool suited for only the most powerful beings in the universe. I can upload and share photos of planets I've destroyed in a magnificent grid layout, that's perfectly balanced as all things should."</h3>
+            <div class="card" data-tab="worst">
+                <h3 class="review-body">"ArtFolio is a tool suited for only the most powerful beings in the universe. I can upload and share photos of planets I've destroyed in a magnificent grid layout, that's perfectly balanced as all things should. Just wish it was exclusive to just me. Also, algorithm needs work."</h3>
                 <p>Thanos the Mad Titan</p>
             </div>
         </div>

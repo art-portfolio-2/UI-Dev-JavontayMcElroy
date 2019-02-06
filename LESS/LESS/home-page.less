@@ -29,7 +29,7 @@ body {
 
 
     @media (max-width: 800px){
-        justify-content: flex-start;
+        
     }
 
     @media (max-width: 500px) {
@@ -69,7 +69,7 @@ body {
         @media (max-width: 800px){
             padding: 3px 30px 3px 50px;
             width: 8%;
-            margin: 0 auto;
+            margin-right: 25px;
         }
 
         @media (max-width: 500px){
@@ -593,7 +593,7 @@ body {
         }
     }
 
-    .filter {
+    .tabs {
         display: flex;
         justify-content: space-evenly;
         width: 300px;
@@ -604,22 +604,24 @@ body {
         }
 
         h3 {
-            background-color:rgb(67, 79, 241);
-            border-radius: 200px;
             font-family: 'Roboto', sans-serif;
             padding: 6.5px 10px 6.5px 10px;
             margin-bottom: 10%;
             font-weight: 700;
-            color: white;
+            color: rgb(17, 17, 17);
             cursor: pointer;
         }
 
         h3:hover {
-            transition: .5s;
-            background-color:rgb(105, 115, 247);
+            color:rgb(33, 47, 248);
+        }
+
+        .active-tab {
+            color:rgb(33, 47, 248);
         }
 
     }
+
 
     .testimony-grid {
         display: grid;
@@ -639,7 +641,9 @@ body {
         }
     }
 
-    .user-reviews {
+    .card {
+        display: flex;
+        flex-direction: column;
         background-color: white;
         box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.027);
         width: 300px;
@@ -674,6 +678,7 @@ body {
             color: rgb(67, 79, 241);
         }
     }
+
 
 }
 
