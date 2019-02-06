@@ -23,8 +23,14 @@ body {
     justify-content: space-between;
     align-content: flex-end;
     padding-top: 20px;
-    margin: 0px 0px 30px 20px;
+    margin: 0px 0px 30px 0px;
     width: 95%;
+    margin: 0 auto;
+
+    @media (max-width: 800px){
+        display: flex;
+        flex-direction: column;
+    }
 
     @media (max-width: 500px) {
         display: flex;
@@ -46,12 +52,18 @@ body {
 
     }
     .login{
-        background-color: rgba(255, 255, 255, 0);
-        border: 1px solid white;
+        background-color: rgb(67, 79, 241);
         border-radius: 5px;
         padding: 5px 15px 5px 50px;
         text-align: center;
         cursor: pointer;
+
+        @media (max-width: 800px){
+            margin-top: 20px;
+            padding: 5px 25px 5px 50px;
+            width: 15%;
+            margin: 20px auto;
+        }
 
         @media (max-width: 500px){
             display: none;
@@ -63,10 +75,10 @@ body {
     }
 
     .login:hover{
-        background-color: white;
+        background-color: rgb(33, 47, 248);
         transition: .5s;
         a {
-            color: black;
+            color: white;
         }
     }
     .title {
@@ -80,8 +92,11 @@ body {
         font-weight: 500;
         cursor: pointer;
         padding-right: 40px;
-
-            
+        
+        @media (max-width: 800px){
+            padding-right: 20px;
+        }
+        
         @media (max-width: 500px) {
             text-align: center;
             padding: 8px 0px 10px 0px;
@@ -95,7 +110,7 @@ body {
 .cover {
     width: 100%;
     padding-bottom: 295px;
-    margin: 0 auto;
+    margin: 12% auto;
 
     @media (max-width: 800px) {
         padding-bottom: 50px;
@@ -108,7 +123,7 @@ body {
     .cover-content{
         display: flex;
         flex-direction: column;
-        margin: 12% 20% 2% 20%;
+        margin: 5% 20% 2% 20%;
         padding: 20px 50px 20px 50px;
         background-color: white;
         border-radius: 8px;
@@ -182,7 +197,7 @@ body {
 .more-info {
     display: flex;
     margin: 0 auto;
-    margin: 15% auto 6% auto;
+    margin: 10% auto 6% auto;
     justify-content: space-between;
     width: 65%;
 
@@ -397,10 +412,16 @@ body {
 
 .team {
     font-family: 'Roboto', sans-serif;
+    width: 66.3%;
     margin: 0 auto;
-    width: 65%;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
+    padding-top: 50px;
     border-bottom: 2px solid rgb(236, 236, 236);
+    border-top: 2px solid rgb(236, 236, 236);
+
+    @media (max-width: 800px){
+        width: 93%;
+    }
 
     h2 {
         width: 100%;
@@ -410,6 +431,7 @@ body {
         line-height: 20px;
         padding-bottom: 20px;
         color: rgb(53, 53, 53);
+        
         @media (max-width: 500px){
             width: 100%;
         }
@@ -418,17 +440,24 @@ body {
     .team-images {
         display: grid;
         grid-template-columns: 0fr 0fr 0fr 0fr;
+        grid-gap: 10px;
         margin: 0 auto;
         width: 100%;
 
         @media (max-width: 800px){
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: 0fr 0fr 0fr 0fr;
+            grid-gap: 10px;
+            width: 100%;
+            margin: 0 auto;
         }
 
         @media (max-width: 500px){
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: 0fr 0fr;
+            grid-gap: 10px;
+            width: 100%;
+            margin: 0 auto;
         }
 
         img{
@@ -437,15 +466,19 @@ body {
             height: 245px;
 
             @media (max-width: 800px){
-                width: 100%;
-                height: 100%;
+                object-fit: cover;
+                width: 135.2px;
+                height: 135.2px;
             }
 
             @media (max-width: 500px){
-                width: 100%;
-                height: 100%;
+                object-fit: cover;
+                width: 166.2px;
+                height: 166.2px;
             }
         }
+
+
     }
 }
 
@@ -533,9 +566,9 @@ body {
     .user-reviews {
         background-color: white;
         box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.027);
-        height: auto;
         width: 300px;
-        padding: 20px 10px 20px 10px;
+        margin: 5% 5% 0% 5%;
+        padding: 20px 20px 20px 20px;
         border-radius: 5px;
 
         @media (max-width: 800px) {
@@ -670,6 +703,24 @@ body {
         }
 
     }
+
+    .mapouter {
+        padding-top: 5%;
+        text-alight: right;
+        height: 300px;
+        width: 400px;
+        border-radius: 8px;
+    }
+
+    .gmap_canvas {
+        border-radius: 5px;
+        overflow: hidden;
+        background: none !important;
+        height: 300px;
+        width: 400px;
+        filter: contrast(1);
+    }
+
 
 }
 
