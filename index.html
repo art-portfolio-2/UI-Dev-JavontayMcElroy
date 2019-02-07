@@ -18,14 +18,13 @@
 <body>
     <nav class="navigation">
         <div class="main-nav">
-            <img class="logo-header" src="design file/Images/logo.png">
-            <a class="title" href="index.html">ARTFOLIO</a>
-            <a href="index.html" target="_blank">home</a>
-            <a href="aboutus.html" target="_blank">about us</a>
-            <a href="blog.html" target="_blank">blog</a>
-            <a href="pricing.html" target="_blank">pricing</a>
+            <img src="logo_with_text.png">
+            <a class="links" href="index.html" target="_blank">home</a>
+            <a class="links" href="aboutus.html" target="_blank">about us</a>
+            <a class="links" href="blog.html" target="_blank">blog</a>
+            <a class="links" href="pricing.html" target="_blank">pricing</a>
+            <div class="login"><a href="https://modest-goldstine-50372c.netlify.com/">login</a></div>
         </div>
-        <div class="login"><a href="https://practical-lalande-6e82f4.netlify.com/">login</a></div>
     </nav>
     <!-- END OF NAV -->
     <section class="cover">
@@ -34,22 +33,28 @@
              <h3 class="cover-body">
                 A place where you can share your amazing art! Whether you're a photographer, painter, digital artist or illustrator. ARTFOLIO can display your content in a professional and clean way! So what are you waiting for? <br> Sign up today:
              </h3>
-            <button class="sign-up" onclick="window.location.href = 'https://practical-lalande-6e82f4.netlify.com/';">Create an account</button>
+            <button class="sign-up" onclick="window.location.href = 'https://modest-goldstine-50372c.netlify.com/';">Create an account</button>
         </div>
     </section>
     <section  class="more-info">
         <div>
             <h3 class="info-text">The one stop place to create beautiful and stunning portfolios that look great on resumes, proposals, or just to have a place to show off your creativity.</h3>
-            <button class="main-button" onclick="window.location.href = 'https://practical-lalande-6e82f4.netlify.com/';">sign up today</button>
+            <button class="main-button" onclick="window.location.href = 'https://modest-goldstine-50372c.netlify.com/';">sign up today</button>
         </div>
         <p>ARTFOLIO is a tool that allows you to create stunning and professional portfolios with ease, there is no other tool like it. With ARTFOLIO, our users can simply upload their work and their work will automatically be placed in a grid format that automatically adjusts to the size of their content. Our team has developed a light-weight tool that can detect the sizes of your photos uploaded, and beautifully display them so that you don't have to worry about it. It's like magic!</p>
     </section>
-    <section class="grid-images">
-        <img src="design file/Images/grid/yellowfood.jpg">
-        <img src="design file/Images/grid/lanterns.jpg">
-        <img src="design file/Images/Kuzco-background.jpg">
-        <img src="design file/Images/grid/greenplants.jpg">
+    
+    <section class="grid">
+        <section class="grid-images">
+            <div class="grid-img"><img src="design file/Images/grid/yellowfood.jpg"></div>
+            <div class="grid-img"><img src="design file/Images/grid/lanterns.jpg"></div>
+        </section>
+            <section class="grid-images">
+            <div class="grid-img"><img src="design file/Images/Kuzco-background.jpg"></div>
+            <div class="grid-img"><img src="design file/Images/grid/greenplants.jpg"></div>
+        </section>
     </section>
+
     <section class="overview">
         <div class="overview-grid">
             <img class="steps" src="design file/Images/steps/1.png">
@@ -75,14 +80,14 @@
     <section class="team">
         <h2>Our team of wizards who put this product together and are always here to help:</h2>
         <div class="team-images">
-            <img src="design file/Images/team/Csilla Gates.jpg">
-            <img src="design file/Images/team/Jon Palacio.jpg">
-            <img src="design file/Images/team/Javontay McElroy.jpg">
-            <img src="design file/Images/team/Andrew Bush.jpg">
-            <img src="design file/Images/team/Angel Torres.jpg">
-            <img src="design file/Images/team/Elisha Atulomah.jpg">
-            <img src="design file/Images/team/Illya Yelizarov.jpg">
-            <img src="design file/Images/team/Brooks Poltl.jpg">
+            <div class="image"><img src="design file/Images/team/Csilla Gates.jpg"></div>
+            <div class="image"><img src="design file/Images/team/Jon Palacio.jpg"></div>
+            <div class="image"><img src="design file/Images/team/Javontay McElroy.jpg"></div>
+            <div class="image"><img src="design file/Images/team/Andrew Bush.jpg"></div>
+            <div class="image"><img src="design file/Images/team/Angel Torres.jpg"></div>
+            <div class="image"><img src="design file/Images/team/Elisha Atulomah.jpg"></div>
+            <div class="image"><img src="design file/Images/team/Illya Yelizarov.jpg"></div>
+            <div class="image"><img src="design file/Images/team/Brooks Poltl.jpg"></div>
         </div>
     </section>
     <section class="testimonies">
@@ -98,36 +103,52 @@
         </div>
         <div class="testimony-grid">
             <div class="card" data-tab="best">
-                <h3 class="review-body">"I never asked for any of this...never asked for a tool that could automatically create a portfolio that I could show Peeta and the kids. I didn't know I needed this until I used it! Now, Peeta gets annoyed because everytime we take a photo, I'm always like, "LET'S ADD IT TO THE PORTFOLIO!"</h3>
-                <p>Katniss Everdeen</p>
+                <div class="review-body">
+                    <h3>"I never asked for any of this...never asked for a tool that could automatically create a portfolio that I could show Peeta and the kids. I didn't know I needed this until I used it! Now, Peeta gets annoyed because everytime we take a photo, I'm always like, "LET'S ADD IT TO THE PORTFOLIO!"</h3>
+                    <p>Katniss Everdeen</p>
+                </div>
             </div>
             <div class="card" data-tab="best">
-                <h3 class="review-body">"I love this app! R2-D2 is kind of mad about it and keeps saying he could already take our space adventure photos and put them into an organized portfolio. But to be honest, he's always had something wrong with them, like I was never in them... With ArtFolio, I CAN PUT MYSELF IN THE WHOLE PORFOLIO!"</h3>
-                <p>Luke Skywalker</p>
+                <div class="review-body">
+                    <h3>"I love this app! R2-D2 is kind of mad about it and keeps saying he could already take our space adventure photos and put them into an organized portfolio. But to be honest, he's always had something wrong with them, like I was never in them... With ArtFolio, I CAN PUT MYSELF IN THE WHOLE PORFOLIO!"</h3>
+                    <p>Luke Skywalker</p>
+                </div>
             </div>
             <div class="card" data-tab="worst">
-                <h3 class="review-body">"The algorithm needs work...a lot of work... To be honest, I think the team should just let me work on this so I can improve it. Could probably get it done in about an hour.. Could even add an A.I. to it! J.A.R.V.I.S 2.0 maybe? I've been wanting to bring back J.A.R.V.I.S. after the whole Ultron, Vision situation. Poor Vision... Was killed by the person he loved, only to be brought back at have his stone ripped right from his head... Where was Shuri when we were creating Vision..."</h3>
-                <p>Bruce Banner</p>
+                <div class="review-body">
+                    <h3>"The algorithm needs work...a lot of work... To be honest, I think the team should just let me work on this so I can improve it. Could probably get it done in about an hour.. Could even add an A.I. to it! J.A.R.V.I.S 2.0 maybe? I've been wanting to bring back J.A.R.V.I.S. after the whole Ultron, Vision situation. Poor Vision... Was killed by the person he loved, only to be brought back at have his stone ripped right from his head... Where was Shuri when we were creating Vision..."</h3>
+                    <p>Bruce Banner</p>
+                </div>
             </div>
             <div class="card" data-tab="best">
-                <h3 class="review-body">"Hey y'all it's B. I really love this app because I'm able to make beautiful collages of me, Blue, the twins, and Jay. I take a lot more pictures now! I just love how it automatically arranges the pictures for me, and it looks so nice! It's fast too, the Beyhive always complained that I never update my site on a regular, but it took too long.. ArtFolio took it to another level NO PASSENGERS ON MY PLANE!"</h3>
-                <p>Beyoncé Knowles-Carter</p>
+                <div class="review-body">
+                    <h3>"Hey y'all it's B. I really love this app because I'm able to make beautiful collages of me, Blue, the twins, and Jay. I take a lot more pictures now! I just love how it automatically arranges the pictures for me, and it looks so nice! It's fast too, the Beyhive always complained that I never update my site on a regular, but it took too long.. ArtFolio took it to another level NO PASSENGERS ON MY PLANE!"</h3>
+                    <p>Beyoncé Knowles-Carter</p>   
+                </div>
             </div>
             <div class="card" data-tab="best">
-                <h3 class="review-body">"ArtFolio is the most MAGICAL thing that has ever hit Bikini Bottom! I didn't know anything about the Internet until Plankton and Sandy teamed up and created underwater computers! Now, I can share pictures of me and Gary with Squidward...I like Squidward."</h3>
-                <p>Spongebob Squarepants</p>
+                <div class="review-body">
+                    <h3>"ArtFolio is the most MAGICAL thing that has ever hit Bikini Bottom! I didn't know anything about the Internet until Plankton and Sandy teamed up and created underwater computers! Now, I can share pictures of me and Gary with Squidward...I like Squidward."</h3>
+                    <p>Spongebob Squarepants</p>     
+                </div>
             </div>
             <div class="card" data-tab="worst">
-                <h3 class="review-body">"ArtFolio is a tool suited for only the most powerful beings in the universe. I can upload and share photos of planets I've destroyed in a magnificent grid layout, that's perfectly balanced as all things should. Just wish it was exclusive to just me. Also, algorithm needs work."</h3>
-                <p>Thanos the Mad Titan</p>
+                <div class="review-body">
+                    <h3>"ArtFolio is a tool suited for only the most powerful beings in the universe. I can upload and share photos of planets I've destroyed in a magnificent grid layout, that's perfectly balanced as all things should. Just wish it was exclusive to just me. Also, algorithm needs work."</h3>
+                    <p>Thanos the Mad Titan</p>               
+                </div>
             </div>
             <div class="card" data-tab="worst">
-                <h3 class="review-body">"I don't see the purpose in this... I could've made something way better because I'm Batman!"</h3>
-                <p>Bruce Wayne</p>
+                <div class="review-body">
+                    <h3>"I don't see the purpose in this... I could've made something way better because I'm Batman!"</h3>
+                    <p>Bruce Wayne</p>              
+                </div>
             </div>
             <div class="card" data-tab="best">
-                <h3 class="review-body">"I like this app! I get to show off pictures of me, Appa, Katara, Sokka, Momo, and Toph with all my friends!"</h3>
-                <p>Avatar Aang</p>
+                <div class="review-body">
+                    <h3>"I like this app! I get to show off pictures of me, Appa, Katara, Sokka, Momo, and Toph with all my friends!"</h3>
+                    <p>Avatar Aang</p>
+                </div>
             </div>
         </div>
     </section>
