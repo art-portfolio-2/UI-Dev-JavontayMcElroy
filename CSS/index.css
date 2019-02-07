@@ -891,17 +891,19 @@ body {
   text-transform: uppercase;
   font-size: 2rem;
   color: #1b1b1b;
-  width: 16%;
+  width: 100%;
+  text-align: center;
   padding-top: 2%;
   margin: 0 auto;
 }
 .about-us-container p {
   font-family: 'Roboto', sans-serif;
   color: #474747;
-  width: 70%;
+  width: 80%;
+  text-align: center;
   margin: 0 auto;
   padding-top: 2%;
-  padding-bottom: 2%;
+  padding-bottom: 5%;
   line-height: 25px;
 }
 .about-us-container .app-dash {
@@ -912,9 +914,13 @@ body {
   padding-bottom: 2%;
 }
 .about-us-container .info h1 {
+  padding-top: 5%;
   width: 100%;
   text-align: center;
   margin: 0 auto;
+}
+.about-us-container .info p {
+  width: 80%;
 }
 .about-us-container .grid-about {
   width: 56.5%;
