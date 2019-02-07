@@ -1,0 +1,82 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about-us-container {
+    width: 100%;
+    margin: 70px auto;
+
+    .about-header {
+        width: 100%;
+        background-color: #e9e9e9;
+    }
+    
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 2rem;
+        color: rgb(27, 27, 27);
+        width: 16%;
+        padding-top: 2%;
+        margin: 0 auto;
+    }
+    p {
+        font-family: 'Roboto', sans-serif;
+        color: rgb(71, 71, 71);
+        width: 70%;
+        margin: 0 auto;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        line-height: 25px;
+    }
+
+    .app-dash {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        padding-bottom: 2%;
+    }
+
+    .info h1 {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .grid-about {
+        width: 56.5%;
+        margin: 0 auto;
+        
+        .grid-images{
+            width: auto;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(40%, .5fr));
+            grid-gap: 5px;
+        
+            .grid-img {
+                img {
+                    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.137); 
+                    border-radius: 8px;
+                    object-fit: cover;
+                    width: 100%;
+                    height: 50vh;
+    
+                    @media (max-width: 500px){
+                        width: 100%;
+                        height: 20vh;
+                    }
+    
+                    @media (max-width: 800px){
+                        width: 100%;
+                        height: 30vh;
+                    }
+                }
+            }
+        
+        }
+    }
+}
