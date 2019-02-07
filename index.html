@@ -17,7 +17,7 @@
 <!-- END OF HEADER -->
 <body>
     <nav class="navigation">
-        <div>
+        <div class="main-nav">
             <img class="logo-header" src="design file/Images/logo.png">
             <a class="title" href="index.html">ARTFOLIO</a>
             <a href="index.html">home</a>
@@ -25,22 +25,22 @@
             <a href="#">instagram</a>
             <a href="#">facebook</a>
         </div>
-        <div class="login"><a href="https://serene-snyder-6e7939.netlify.com/">login</a></div>
+        <div class="login"><a href="https://practical-lalande-6e82f4.netlify.com/">login</a></div>
     </nav>
-<!-- END OF NAV -->
+    <!-- END OF NAV -->
     <section class="cover">
         <div class="cover-content">
             <h3 class="cover-text">Welcome to ARTFOLIO</h3>
              <h3 class="cover-body">
                 A place where you can share your amazing art! Whether you're a photographer, painter, digital artist or illustrator. ARTFOLIO can display your content in a professional and clean way! So what are you waiting for? <br> Sign up today:
              </h3>
-            <button class="sign-up" onclick="window.location.href = 'https://serene-snyder-6e7939.netlify.com/';">Create an account</button>
+            <button class="sign-up" onclick="window.location.href = 'https://practical-lalande-6e82f4.netlify.com/';">Create an account</button>
         </div>
     </section>
     <section  class="more-info">
         <div>
             <h3 class="info-text">The one stop place to create beautiful and stunning portfolios that look great on resumes, proposals, or just to have a place to show off your creativity.</h3>
-            <button class="main-button" onclick="window.location.href = 'https://serene-snyder-6e7939.netlify.com/';">sign up today</button>
+            <button class="main-button" onclick="window.location.href = 'https://practical-lalande-6e82f4.netlify.com/';">sign up today</button>
         </div>
         <p>ARTFOLIO is a tool that allows you to create stunning and professional portfolios with ease, there is no other tool like it. With ARTFOLIO, our users can simply upload their work and their work will automatically be placed in a grid format that automatically adjusts to the size of their content. Our team has developed a light-weight tool that can detect the sizes of your photos uploaded, and beautifully display them so that you don't have to worry about it. It's like magic!</p>
     </section>
@@ -121,22 +121,34 @@
                 <h3 class="review-body">"ArtFolio is a tool suited for only the most powerful beings in the universe. I can upload and share photos of planets I've destroyed in a magnificent grid layout, that's perfectly balanced as all things should. Just wish it was exclusive to just me. Also, algorithm needs work."</h3>
                 <p>Thanos the Mad Titan</p>
             </div>
+            <div class="card" data-tab="worst">
+                <h3 class="review-body">"I don't see the purpose in this... I could've made something way better because I'm Batman!"</h3>
+                <p>Bruce Wayne</p>
+            </div>
+            <div class="card" data-tab="best">
+                <h3 class="review-body">"I like this app! I get to show off pictures of me, Appa, Katara, Sokka, Momo, and Toph with all my friends!"</h3>
+                <p>Avatar Aang</p>
+            </div>
         </div>
     </section>
-    <section class="footer">
+    <footer class="footer">
         <section class="about-us">
             <h1>About Us</h1>
-            <p>Deserunt voluptate pariatur non tempor incididunt incididunt consectetur elit Lorem cillum laboris proident. Velit reprehenderit quis occaecat voluptate quis. Amet non officia ullamco dolore velit excepteur magna esse sit amet aliquip. Eiusmod adipisicing adipisicing reprehenderit minim aliqua id tempor irure dolore ex ea. Velit elit aliquip anim sit qui id laborum.</p>
+            <p>ARTFOLIO is a new platform that allows users to upload their photos that is automatically placed in a grid format! We believe in professional results that you can share with family, friends, and of course employers! Join the community of artists, illustrators, photographers, and more and show the world what you can create!</p>
         </section>
         <section class="contact-footer">
             <h1>CONTACT US</h1>
-            <form class="contact-form" action="index.html" method="post">
+            <form class="contact-form" action="mailto:dinomightnetwork@gmail.com" method="post" enctype="text/plain">
                 <input type="text" class="contact-form-text" placeholder="Your Name">
                 <input type="email" class="contact-form-text" placeholder="Your Email">
                 <textarea class="contact-form-text" placeholder="Your Message"></textarea>
                 <input type="submit" class="contact-form-btn" value="Submit">
             </form>
         </section>
-    </section>
+    </footer>
 </body>
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="menu.js"></script>
+
 </html>
