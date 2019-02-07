@@ -620,12 +620,18 @@ a:hover {
   display: grid;
   grid-template-columns: 0fr 0fr 0fr 0fr;
   grid-gap: 10px;
-  margin: 0 auto;
   width: 100%;
+  margin: 0 auto;
 }
 @media (max-width: 1440px) {
   .team .team-images {
     width: 100%;
+    margin: 0 10%;
+  }
+}
+@media (max-width: 1024px) {
+  .team .team-images {
+    width: 630px;
     margin: 0 auto;
   }
 }
@@ -634,8 +640,8 @@ a:hover {
     display: grid;
     grid-template-columns: 0fr 0fr 0fr 0fr;
     grid-gap: 10px;
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0 10%;
   }
 }
 @media (max-width: 500px) {
@@ -643,8 +649,8 @@ a:hover {
     display: grid;
     grid-template-columns: 0fr 0fr;
     grid-gap: 10px;
-    width: 78%;
-    margin: 0 auto;
+    width: 50%;
+    margin: 0% 10%;
   }
 }
 .team .team-images img {
@@ -657,6 +663,13 @@ a:hover {
     object-fit: cover;
     width: 200px;
     height: 200px;
+  }
+}
+@media (max-width: 1024px) {
+  .team .team-images img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
   }
 }
 @media (max-width: 800px) {
@@ -793,7 +806,7 @@ a:hover {
   color: #434ff1;
 }
 .footer {
-  background-image: url(https://i.ibb.co/fCpjvCP/footerimg.png);
+  background-color: #212ff8;
   background-repeat: no-repeat;
   background-size: 100%;
   padding-top: 8%;
