@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-1800,-540)">
+        <g id="BRANDING" transform="matrix(1,0,0,1,178.06,-740.027)">
+            <g transform="matrix(1,0,0,1,-2010,13.1277)">
+                <g transform="matrix(0.475,0,0,0.475,3470.69,1138.15)">
+                    <rect x="339.474" y="271.053" width="421.053" height="421.053" style="fill:none;"/>
+                </g>
+                <g transform="matrix(1,0,0,1,3581.94,16.8989)">
+                    <rect x="70" y="1270" width="160" height="160" style="fill:none;"/>
+                </g>
+            </g>
+            <g transform="matrix(1,0,0,1,-178.06,740.027)">
+                <path d="M1925,580L1980,580L1980,700L1925,700L1925,720L1820,720L1820,560L1925,560L1925,580ZM1922,563L1823,563L1823,717L1922,717L1922,700L1890,700L1890,683L1852,683L1852,640L1890,640L1890,580L1922,580L1922,563ZM1977,583L1893,583L1893,640L1915,640L1915,683L1893,683L1893,697L1977,697L1977,583ZM1855,643L1855,680L1912,680L1912,643C1893,643 1874,643 1855,643ZM1893,663L1874,663L1874,660L1893,660L1893,663ZM1919,593L1900,593L1900,590L1919,590L1919,593ZM1849,573L1830,573L1830,570L1849,570L1849,573Z" style="fill:rgb(35,69,88);"/>
+            </g>
+        </g>
+    </g>
+</svg>
