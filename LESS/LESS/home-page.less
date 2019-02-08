@@ -363,9 +363,6 @@ html {
 }
 
 .overview {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     width: 58%;
     margin: 0% auto;
     margin-top: 5%;
@@ -375,78 +372,122 @@ html {
         display: flex;
         flex-direction: column;
         width: 100%;
-        border-top: 2px solid rgb(231, 231, 231);
-        margin-top: 10%;
-        padding-top: 50px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        margin-bottom: 0%;
     }
 
     @media (max-width: 500px){
         display: flex;
         flex-direction: column;
         width: 100%;
-        border-top: 2px solid rgb(231, 231, 231);
-        margin-top: 15%;
-        padding-top: 50px;
+        padding-top: 50%;
+        padding-bottom: 20%;
     }
 
-
-    .overview-grid {
-        width: 100%;
-        font-family: 'Roboto', sans-serif;
-        padding: 0px 30px 0px 30px;
+    .overview-post {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding-top: 10%;
+        padding-bottom: 15%;
+        border-top: 2px solid rgb(236, 236, 236);
 
-        @media (max-width: 800px){
-            width: 90%;
-            margin: auto auto 5% auto;
-            padding: 20px 10px 20px 10px;
-            background-color: white;
-            border-radius: 5px;
-            box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.055);
+        @media (max-width: 1440px){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-bottom: 5%;
+            margin-left: 8%;
         }
 
-
-        @media (max-width: 500px){
+        img {
             width: 90%;
-            margin: auto auto 20% auto;
-            padding: 20px 10px 20px 10px;
-            background-color: white;
-            border-radius: 5px;
-            box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.13);
+            max-width: 550px;
+            max-height: 650px;
         }
 
         h3 {
-            color: rgb(33, 47, 248);
-            border-top: 2px solid rgb(236, 236, 236);
-            padding-top: 15px;
+            font-family: 'Roboto', sans-serif;
+            margin-left: 5%;
+            margin-right: 5%;
             padding-bottom: 10px;
-            font-size: 1rem;
+            font-size: 4rem;
+            border-bottom: 5px solid rgb(33, 47, 248);
             font-weight: 700;
-            text-align: center;
-            text-transform: uppercase;
-        }
+            color: rgb(33, 47, 248);
 
-        p {
-            line-height: 20px;
-            color: grey;
-            font-size: 1rem;
-            font-weight: 500;
-            text-align: center;
-            @media (max-width: 500px){
-                padding-bottom: 10%;
+            @media (max-width: 800px){
+                font-size: 2.5rem;
             }
         }
 
-        .steps {
-            width: 30px;
-            height: 30px;
-            margin: 0 auto;
-            padding-bottom: 20px;
+        p {
+            font-family: 'Roboto', sans-serif;
+            padding-top: 5%;
+            margin-left: 5%;
+            margin-right: 5%;
+            line-height: 35px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: grey;
+
         }
 
     }
+
+    .overview-post-reversed {
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        height: auto;
+        padding-top: 5%;
+        padding-bottom: 5%;
+
+        @media (max-width: 1440px){
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding-bottom: 5%;
+        }
+
+        img {
+            width: 90%;
+            max-width: 550px;
+            max-height: 650px;
+        }
+
+        h3 {
+            font-family: 'Roboto', sans-serif;
+            margin-right: 5%;
+            margin-left: 5%;
+            padding-bottom: 10px;
+            font-size: 4rem;
+            border-bottom: 5px solid rgb(33, 47, 248);
+            font-weight: 700;
+            color: rgb(33, 47, 248);
+
+            @media (max-width: 800px){
+                font-size: 2.5rem;
+            }
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+            padding-top: 5%;
+            margin-left: 5%;
+            margin-right: 5%;
+            line-height: 35px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: grey;
+
+        }
+
+    }
+
 }
+
 
 .team {
     font-family: 'Roboto', sans-serif;
@@ -637,6 +678,11 @@ html {
     flex-direction: row-reverse;
     justify-content: space-around;
 
+    @media (max-width: 1440px){
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     @media (max-width: 500px) {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -647,6 +693,10 @@ html {
     .about-us{
         margin: 0% 0% 5% 5%;
         width: 30%;
+
+        @media (max-width: 1440px){
+            width: 90%;
+        }
 
         @media(max-width: 500px){
             margin: 10% 0% 2% 5%;

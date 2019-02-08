@@ -486,9 +486,6 @@ html {
   }
 }
 .overview {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   width: 58%;
   margin: 0% auto;
   margin-top: 5%;
@@ -499,9 +496,9 @@ html {
     display: flex;
     flex-direction: column;
     width: 100%;
-    border-top: 2px solid #e7e7e7;
-    margin-top: 10%;
-    padding-top: 50px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 0%;
   }
 }
 @media (max-width: 500px) {
@@ -509,65 +506,102 @@ html {
     display: flex;
     flex-direction: column;
     width: 100%;
-    border-top: 2px solid #e7e7e7;
-    margin-top: 15%;
-    padding-top: 50px;
+    padding-top: 50%;
+    padding-bottom: 20%;
   }
 }
-.overview .overview-grid {
-  width: 100%;
-  font-family: 'Roboto', sans-serif;
-  padding: 0px 30px 0px 30px;
+.overview .overview-post {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  padding-top: 10%;
+  padding-bottom: 15%;
+  border-top: 2px solid #ececec;
+}
+@media (max-width: 1440px) {
+  .overview .overview-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 5%;
+    margin-left: 8%;
+  }
+}
+.overview .overview-post img {
+  width: 90%;
+  max-width: 550px;
+  max-height: 650px;
+}
+.overview .overview-post h3 {
+  font-family: 'Roboto', sans-serif;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 10px;
+  font-size: 4rem;
+  border-bottom: 5px solid #212ff8;
+  font-weight: 700;
+  color: #212ff8;
 }
 @media (max-width: 800px) {
-  .overview .overview-grid {
-    width: 90%;
-    margin: auto auto 5% auto;
-    padding: 20px 10px 20px 10px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.055);
+  .overview .overview-post h3 {
+    font-size: 2.5rem;
   }
 }
-@media (max-width: 500px) {
-  .overview .overview-grid {
-    width: 90%;
-    margin: auto auto 20% auto;
-    padding: 20px 10px 20px 10px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.13);
-  }
-}
-.overview .overview-grid h3 {
-  color: #212ff8;
-  border-top: 2px solid #ececec;
-  padding-top: 15px;
-  padding-bottom: 10px;
-  font-size: 1rem;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-}
-.overview .overview-grid p {
-  line-height: 20px;
-  color: grey;
-  font-size: 1rem;
+.overview .overview-post p {
+  font-family: 'Roboto', sans-serif;
+  padding-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  line-height: 35px;
+  font-size: 1.2rem;
   font-weight: 500;
-  text-align: center;
+  color: grey;
 }
-@media (max-width: 500px) {
-  .overview .overview-grid p {
-    padding-bottom: 10%;
+.overview .overview-post-reversed {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  height: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+@media (max-width: 1440px) {
+  .overview .overview-post-reversed {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 5%;
   }
 }
-.overview .overview-grid .steps {
-  width: 30px;
-  height: 30px;
-  margin: 0 auto;
-  padding-bottom: 20px;
+.overview .overview-post-reversed img {
+  width: 90%;
+  max-width: 550px;
+  max-height: 650px;
+}
+.overview .overview-post-reversed h3 {
+  font-family: 'Roboto', sans-serif;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding-bottom: 10px;
+  font-size: 4rem;
+  border-bottom: 5px solid #212ff8;
+  font-weight: 700;
+  color: #212ff8;
+}
+@media (max-width: 800px) {
+  .overview .overview-post-reversed h3 {
+    font-size: 2.5rem;
+  }
+}
+.overview .overview-post-reversed p {
+  font-family: 'Roboto', sans-serif;
+  padding-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  line-height: 35px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: grey;
 }
 .team {
   font-family: 'Roboto', sans-serif;
@@ -743,6 +777,12 @@ html {
   flex-direction: row-reverse;
   justify-content: space-around;
 }
+@media (max-width: 1440px) {
+  .footer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 @media (max-width: 500px) {
   .footer {
     padding-top: 50px;
@@ -754,6 +794,11 @@ html {
 .footer .about-us {
   margin: 0% 0% 5% 5%;
   width: 30%;
+}
+@media (max-width: 1440px) {
+  .footer .about-us {
+    width: 90%;
+  }
 }
 @media (max-width: 500px) {
   .footer .about-us {
