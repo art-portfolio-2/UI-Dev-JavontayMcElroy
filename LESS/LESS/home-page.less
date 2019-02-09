@@ -137,10 +137,10 @@ html {
     }
 
     @media (max-width: 500px){
-        width: 95%;
+        width: 90%;
         padding-top: 10%;
         padding-bottom: 0px;
-        margin-top: 5%;
+        margin-top: 8%;
     }
 
     .cover-content{
@@ -170,7 +170,7 @@ html {
         .cover-text {
             font-size: 1.5rem;
             //text-transform: uppercase;
-            color: rgb(53, 53, 53);
+            color: #202ef8;
             font-family: 'Roboto', sans-serif;
             font-size: 2rem;
             font-weight: 700;
@@ -180,7 +180,7 @@ html {
             padding: 5% 0% 2% 0%;
 
             @media (max-width: 500px) {
-                font-size: 1rem;
+                font-size: 1.2rem;
                 line-height: 20px;
                 padding: 0% 0% 5% 0%;
             }
@@ -199,6 +199,10 @@ html {
             @media (max-width: 800px){
                 font-size: 1rem;
                 line-height: 30px;
+            }
+
+            @media (max-width: 500px){
+                font-size: .8rem;
             }
         }
         .sign-up {
@@ -333,6 +337,10 @@ html {
 .grid {
     width: 56.5%;
     margin: 0 auto;
+
+    @media (max-width: 500px) {
+        width: 85%;
+    }
     
     .grid-images{
         width: auto;
@@ -348,7 +356,7 @@ html {
                 height: 80vh;
 
                 @media (max-width: 500px){
-                    width: 100%;
+                    width: 150%;
                     height: 20vh;
                 }
 
@@ -381,7 +389,7 @@ html {
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding-top: 50%;
+        padding-top: 5%;
         padding-bottom: 20%;
     }
 
@@ -469,6 +477,10 @@ html {
 
             @media (max-width: 800px){
                 font-size: 2.5rem;
+            }
+
+            @media (max-width: 500px){
+                padding-top: 10%;
             }
         }
 
@@ -778,6 +790,38 @@ html {
             @media (max-width: 500px) {
                 max-width: 320px;
             }
+            .sign-up {
+                margin: 0 auto;
+                margin-bottom: 20px;
+                width: 100%;
+                padding: 10px 50px 10px 50px;
+                background-color: rgb(30, 230, 47);
+                border: 0px solid black;
+                border-radius: 3px;
+                font-weight: 700;
+                color: white;
+                cursor: pointer;  
+    
+                @media (max-width: 1440px){
+                    width: 40%;
+                }
+    
+                @media (max-width: 800px){
+                    width: 100%;
+                    margin-top: 5%; 
+                }
+                @media (max-width: 500px){
+                    width: 100%;
+                }
+    
+            }
+            .sign-up:hover {
+                background-color: rgb(108, 241, 67);
+                border: 0px solid black;
+                color: white;
+                transition: .5s;
+            }
+        }
         }
 
         .contact-form-text {
@@ -823,4 +867,3 @@ html {
         }
 
     }
-}
