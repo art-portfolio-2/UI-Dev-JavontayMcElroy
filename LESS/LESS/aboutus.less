@@ -13,10 +13,15 @@
     margin-top: 2%;
     margin-bottom: 5%;
     background-color: rgb(33, 47, 248);
+
     @media (max-width: 800px){
         margin-top: 15%;
     }
 
+    @media (max-width: 500px){
+        margin-top: 0%;
+        padding-top: 15%;
+    }
 
     h1 {
         font-family: 'Roboto', sans-serif;
@@ -28,6 +33,13 @@
         text-align: center;
         padding-top: 5%;
         margin: 0 auto;
+
+        @media (max-width: 500px) {
+            font-size: 2rem;
+            padding-top: 10%;
+            padding-bottom: 5%;
+        }
+    
     }
     p {
         font-family: 'Roboto', sans-serif;
@@ -42,7 +54,15 @@
 
         @media (max-width: 800px){
             font-size: .8rem;
+            text-align: justify;
         }
+
+        @media (max-width: 500px) {
+            line-height: 35px;
+            padding-bottom: 12%;
+            font-weight: 500;
+        }
+    
     }
 
     .app-dash {
@@ -76,6 +96,12 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+
+        @media (max-width: 500px){
+            display: flex;
+            flex-direction: column;
+            grid-template-columns: 1fr 1fr; 
+        }
 
 
         .icons {

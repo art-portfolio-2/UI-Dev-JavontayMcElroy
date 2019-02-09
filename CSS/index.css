@@ -986,6 +986,12 @@ html {
     margin-top: 15%;
   }
 }
+@media (max-width: 500px) {
+  .about-us-header {
+    margin-top: 0%;
+    padding-top: 15%;
+  }
+}
 .about-us-header h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -996,6 +1002,13 @@ html {
   text-align: center;
   padding-top: 5%;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .about-us-header h1 {
+    font-size: 2rem;
+    padding-top: 10%;
+    padding-bottom: 5%;
+  }
 }
 .about-us-header p {
   font-family: 'Roboto', sans-serif;
@@ -1011,6 +1024,14 @@ html {
 @media (max-width: 800px) {
   .about-us-header p {
     font-size: 0.8rem;
+    text-align: justify;
+  }
+}
+@media (max-width: 500px) {
+  .about-us-header p {
+    line-height: 35px;
+    padding-bottom: 12%;
+    font-weight: 500;
   }
 }
 .about-us-header .app-dash {
@@ -1042,6 +1063,13 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .about-us-header .icon-grid {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .about-us-header .icon-grid .icons {
   display: flex;
